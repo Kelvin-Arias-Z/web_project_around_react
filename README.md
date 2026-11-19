@@ -1,16 +1,53 @@
-# React + Vite
+# Around The U.S. — React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del proyecto
 
-Currently, two official plugins are available:
+Around The U.S. es una aplicación web interactiva desarrollada con React y Vite, como parte del programa de Desarrollo Web de TripleTen.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este proyecto consiste en migrar una aplicación desarrollada originalmente con HTML, CSS y JavaScript a una arquitectura basada en componentes de React.
 
-## React Compiler
+## Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Vite
+- Git y GitHub
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Visualización del perfil de usuario.
+- Visualización de tarjetas con fotografías de lugares.
+- Ventanas emergentes para editar el perfil, cambiar el avatar y agregar tarjetas.
+- Visualización ampliada de fotografías.
+- Ventana de confirmación para eliminar tarjetas.
+- Apertura y cierre de ventanas emergentes mediante React y el hook `useState`.
+
+Los formularios y las acciones de modificación de datos todavía no están conectados a una API.
+
+## Instalación y ejecución
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/Kelvin-Arias-Z/web_project_around_react.git
+```
+
+Instalar las dependencias:
+
+```bash
+npm install
+```
+
+Iniciar el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+La aplicación estará disponible en `http://localhost:3000/`.
+
+## Repositorio
+
+https://github.com/Kelvin-Arias-Z/web_project_around_react

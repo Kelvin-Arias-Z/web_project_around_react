@@ -1,4 +1,5 @@
 import ImagePopup from "../ImagePopup/ImagePopup.jsx";
+import RemoveCard from "../RemoveCard/RemoveCard.jsx";
 
 export default function Card(props) {
   const { name, link, isLiked } = props.card;
@@ -7,6 +8,10 @@ export default function Card(props) {
   const imageComponent = {
   title: null,
   children: <ImagePopup card={props.card} />,
+};
+const removeCardPopup = {
+  title: "¿Estás seguro?",
+  children: <RemoveCard />,
 };
   return (
     <li className="card">
@@ -20,6 +25,7 @@ export default function Card(props) {
         aria-label="Eliminar tarjeta"
         className="card__delete-button"
         type="button"
+        onClick={() => handleOpenPopup(removeCardPopup)}
       />
       <div className="card__description">
         <h2 className="card__title">{name}</h2>
